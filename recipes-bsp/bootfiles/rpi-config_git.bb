@@ -232,7 +232,7 @@ do_deploy() {
     fi
 }
 
-do_deploy_append_raspberrypi3-64() {
+do_deploy:append:raspberrypi3-64() {
     echo "# have a properly sized image" >> ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/config.txt
     echo "disable_overscan=1" >> ${DEPLOYDIR}/${BOOTFILES_DIR_NAME}/config.txt
 
