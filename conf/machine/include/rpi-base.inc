@@ -15,15 +15,30 @@ XSERVER = " \
     "
 
 RPI_KERNEL_DEVICETREE_OVERLAYS ?= " \
+   overlays/overlay_map.dtb \
     overlays/at86rf233.dtbo \
     overlays/disable-bt.dtbo \
     overlays/dwc2.dtbo \
+   overlays/gpio-ir.dtbo \
+   overlays/gpio-ir-tx.dtbo \
     overlays/gpio-key.dtbo \
     overlays/hifiberry-amp.dtbo \
+   overlays/hifiberry-amp100.dtbo \
+   overlays/hifiberry-amp3.dtbo \
     overlays/hifiberry-dac.dtbo \
     overlays/hifiberry-dacplus.dtbo \
+   overlays/hifiberry-dacplusadcpro.dtbo \
+   overlays/hifiberry-dacplusdsp.dtbo \
+   overlays/hifiberry-dacplushd.dtbo \
+   overlays/hifiberry-digi-pro.dtbo \
     overlays/hifiberry-digi.dtbo \
+       overlays/justboom-both.dtbo \
+    overlays/justboom-dac.dtbo \
+    overlays/justboom-digi.dtbo \
+    overlays/i2c-gpio.dtbo \
     overlays/i2c-rtc.dtbo \
+    overlays/imx219.dtbo \
+    overlays/imx477.dtbo \
     overlays/iqaudio-dac.dtbo \
     overlays/iqaudio-dacplus.dtbo \
     overlays/miniuart-bt.dtbo \
@@ -42,21 +57,34 @@ RPI_KERNEL_DEVICETREE_OVERLAYS ?= " \
     overlays/w1-gpio.dtbo \
     overlays/gpio-ir.dtbo \
     overlays/gpio-ir-tx.dtbo \
+    overlays/mcp3008.dtbo \
+    overlays/miniuart-bt.dtbo \
+    overlays/pitft28-capacitive.dtbo \
+    overlays/vc4-kms-v3d-pi4.dtbo \
+    overlays/vc4-kms-dsi-7inch.dtbo \
+    overlays/w1-gpio-pullup.dtbo \
+    overlays/wm8960-soundcard.dtbo \
     "
 
 RPI_KERNEL_DEVICETREE ?= " \
+    bcm2708-rpi-zero.dtb \
     bcm2708-rpi-zero-w.dtb \
     bcm2708-rpi-b.dtb \
+    bcm2708-rpi-b-rev1.dtb \
     bcm2708-rpi-b-plus.dtb \
     bcm2709-rpi-2-b.dtb \
+    bcm2710-rpi-2-b.dtb \
     bcm2710-rpi-3-b.dtb \
     bcm2710-rpi-3-b-plus.dtb \
     bcm2711-rpi-4-b.dtb \
+    bcm2711-rpi-400.dtb \
     bcm2708-rpi-cm.dtb \
     bcm2710-rpi-cm3.dtb \
+    bcm2711-rpi-cm4.dtb \
+    bcm2711-rpi-cm4s.dtb \
     "
 
-KERNEL_DEVICETREE ?= " \
+KERNEL_DEVICETREE ??= " \
     ${RPI_KERNEL_DEVICETREE} \
     ${RPI_KERNEL_DEVICETREE_OVERLAYS} \
     "
