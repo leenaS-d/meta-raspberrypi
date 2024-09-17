@@ -4,6 +4,6 @@ RPIFW_SRC_URI ?= "https://github.com/raspberrypi/firmware/archive/${SRCREV}.tar.
 RPIFW_S ?= "${WORKDIR}/firmware-${SRCREV}"
 
 SRC_URI = "${RPIFW_SRC_URI}"
-SRC_URI[sha256sum] = "d9c345269de950e0ebad945af0065269bd3ce7ea1998730d6b7d3b647444764e"
+SRC_URI[sha256sum] = "86e3c050aedf2e4886f4901a0e0e3792bf9cde227aff95f8d873d726398bdddf"
 
 PV = "${RPIFW_DATE}"
